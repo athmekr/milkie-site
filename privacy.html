@@ -1,13 +1,25 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Milkie privacy policy</title>
+<meta name="theme-color" content="#FBF7F3" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121015" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="stylesheet" href="style.css">
+<script src="lang.js"></script>
 </head>
 <body>
-<main>
+<header class="bar">
+  <a class="brand" href="index.html"><img src="icon.png" alt="" width="36" height="36">Milkie</a>
+  <div class="switch" role="group" aria-label="Language">
+    <button type="button" data-set-lang="en">EN</button><button type="button" data-set-lang="el">ΕΛ</button>
+  </div>
+</header>
+<main class="doc">
+<div lang="en">
 <h1>Privacy policy</h1>
 <p class="muted">Last updated 5 November 2026</p>
 <p><strong>Milkie collects nothing.</strong> The app has no account, no ads, no analytics and no network code, and it sends nothing to its developer or to anyone else.</p>
@@ -26,7 +38,8 @@
 <h2>Changes and contact</h2>
 <p>If any of this ever changes, for example when syncing between parents arrives, this page will say so first. Questions: <a href="mailto:support@getmilkie.com">support@getmilkie.com</a>.</p>
 
-<section lang="el">
+</div>
+<div lang="el">
 <h1>Πολιτική απορρήτου</h1>
 <p class="muted">Τελευταία ενημέρωση 5 Νοεμβρίου 2026</p>
 <p><strong>Το Milkie δεν συλλέγει τίποτα.</strong> Η εφαρμογή δεν έχει λογαριασμό, διαφημίσεις, αναλυτικά στοιχεία ή κώδικα δικτύου, και δεν στέλνει τίποτα στον δημιουργό της ή σε κανέναν άλλο.</p>
@@ -44,8 +57,11 @@
 <p>Αν γράψεις στη διεύθυνση υποστήριξης, το μήνυμά σου προωθείται μέσω Cloudflare στο Gmail του δημιουργού. Χρησιμοποιείται μόνο για να σου απαντήσει.</p>
 <h2>Αλλαγές και επικοινωνία</h2>
 <p>Αν κάτι από αυτά αλλάξει ποτέ, για παράδειγμα όταν έρθει ο συγχρονισμός ανάμεσα στους γονείς, αυτή η σελίδα θα το πει πρώτη. Ερωτήσεις: <a href="mailto:support@getmilkie.com">support@getmilkie.com</a>.</p>
-</section>
-<p><a href="index.html">Milkie</a></p>
+</div>
 </main>
+<footer class="foot">
+  <a href="index.html">Milkie</a>
+  <a href="mailto:support@getmilkie.com">support@getmilkie.com</a>
+</footer>
 </body>
 </html>

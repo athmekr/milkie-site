@@ -1,23 +1,161 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Milkie</title>
+<title>Milkie: feeding tracker for iPhone</title>
+<meta name="description" content="Log breastfeeding, bottles, pumping and diapers with one hand, day or night. No ads, no account, and your data stays on your iPhone.">
+<meta name="theme-color" content="#FBF7F3" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121015" media="(prefers-color-scheme: dark)">
+<meta property="og:title" content="Milkie: feeding tracker for iPhone">
+<meta property="og:description" content="Breastfeeding, bottles, pumping and diapers, logged with one hand. No ads, no account.">
+<meta property="og:image" content="https://getmilkie.com/og.jpg">
+<meta property="og:url" content="https://getmilkie.com/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="stylesheet" href="style.css">
+<script src="lang.js"></script>
 </head>
 <body>
-<main>
-<img class="icon" src="icon.png" alt="The Milkie app icon: a smiling milk drop">
-<h1>Milkie</h1>
-<p>Log breastfeeding, bottles, pumping and diapers with one hand, day or night. No ads, no account, and the app sends nothing anywhere.</p>
-<p lang="el" class="muted">Θηλασμός, μπιμπερό, άντληση και πάνες με το ένα χέρι, μέρα ή νύχτα. Χωρίς διαφημίσεις, χωρίς λογαριασμό, και η εφαρμογή δεν στέλνει τίποτα πουθενά.</p>
-<section>
-<h2>Support · Υποστήριξη</h2>
-<p>Questions or something not working? Write to <a href="mailto:support@getmilkie.com">support@getmilkie.com</a>.</p>
-<p lang="el">Ερωτήσεις ή κάτι δεν δουλεύει; Γράψε στο <a href="mailto:support@getmilkie.com">support@getmilkie.com</a>.</p>
+<header class="bar">
+  <a class="brand" href="#top"><img src="icon.png" alt="" width="36" height="36">Milkie</a>
+  <nav>
+    <a href="#features"><span lang="en">Features</span><span lang="el">Δυνατότητες</span></a>
+    <a href="#screens"><span lang="en">Screens</span><span lang="el">Οθόνες</span></a>
+    <a href="#support"><span lang="en">Support</span><span lang="el">Υποστήριξη</span></a>
+  </nav>
+  <div class="switch" role="group" aria-label="Language">
+    <button type="button" data-set-lang="en">EN</button><button type="button" data-set-lang="el">ΕΛ</button>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="hero-text">
+    <p class="kicker"><span lang="en">For iPhone and Apple Watch</span><span lang="el">Για iPhone και Apple Watch</span></p>
+    <h1><span lang="en">Every feed, logged with one hand.</span><span lang="el">Κάθε τάισμα, με το ένα χέρι.</span></h1>
+    <p class="lead"><span lang="en">Milkie keeps track of breastfeeding, bottles, pumping and diapers, so you always know which side is next and when the next feed is due.</span><span lang="el">Το Milkie κρατά θηλασμό, μπιμπερό, άντληση και πάνες, για να ξέρεις πάντα ποια πλευρά είναι η επόμενη και πότε έρχεται το επόμενο τάισμα.</span></p>
+    <div class="cta">
+      <span class="badge-soon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.4 12.6c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.1-2.8.9-3.5.9s-1.8-.8-3-.8C7 7.4 5.6 8.3 4.8 9.7c-1.6 2.8-.4 6.9 1.2 9.1.8 1.1 1.7 2.3 2.8 2.3 1.1 0 1.6-.7 3-.7s1.8.7 3 .7 2-1.1 2.8-2.2c.9-1.3 1.2-2.5 1.2-2.6 0 0-2.4-.9-2.4-3.7zM14.2 5.8c.6-.8 1-1.8.9-2.8-.9 0-2 .6-2.6 1.4-.6.7-1.1 1.7-.9 2.7 1 .1 2-.5 2.6-1.3z"/></svg><span><small lang="en">Coming soon to the</small><small lang="el">Σύντομα στο</small>App Store</span></span>
+      <a class="link-more" href="#features"><span lang="en">See what it does</span><span lang="el">Δες τι κάνει</span> ↓</a>
+    </div>
+    <ul class="pills">
+      <li><span lang="en">No ads</span><span lang="el">Χωρίς διαφημίσεις</span></li>
+      <li><span lang="en">No account</span><span lang="el">Χωρίς λογαριασμό</span></li>
+      <li><span lang="en">Data stays on your iPhone</span><span lang="el">Τα δεδομένα μένουν στο iPhone</span></li>
+    </ul>
+  </div>
+  <div class="hero-phones" aria-hidden="true">
+    <img class="phone back" lang="en" src="img/en-1-feeding-screen.webp" alt="" width="560" height="1236">
+    <img class="phone back" lang="el" src="img/el-1-feeding-screen.webp" alt="" width="560" height="1236" loading="lazy">
+    <img class="phone front" lang="en" src="img/en-3-home-screen.webp" alt="" width="560" height="1236">
+    <img class="phone front" lang="el" src="img/el-3-home-screen.webp" alt="" width="560" height="1236" loading="lazy">
+  </div>
 </section>
-<p><a href="privacy.html">Privacy policy · Πολιτική απορρήτου</a></p>
+
+<section id="features" class="block">
+  <h2><span lang="en">Made for the night shift</span><span lang="el">Φτιαγμένο για τις νυχτερινές βάρδιες</span></h2>
+  <p class="sub"><span lang="en">Big buttons, one hand, and nothing in the way.</span><span lang="el">Μεγάλα κουμπιά, το ένα χέρι, και τίποτα περιττό.</span></p>
+  <div class="grid">
+    <article class="card">
+      <div class="ico peach"><svg viewBox="0 0 24 24"><path d="M9 11V5.5a1.5 1.5 0 0 1 3 0V10m0-1.5a1.5 1.5 0 0 1 3 0V11m0-1a1.5 1.5 0 0 1 3 0v4.5c0 3.6-2.4 6.5-6 6.5-2.5 0-3.8-1.2-5-3l-2.6-4.2a1.4 1.4 0 0 1 2.3-1.6L9 14"/></svg></div>
+      <h3><span lang="en">One tap</span><span lang="el">Ένα πάτημα</span></h3>
+      <p><span lang="en">Tap Left or Right to start, the other side to switch, the same side to stop. Pause for burping, or move a late start back.</span><span lang="el">Αριστερά ή Δεξιά για έναρξη, η άλλη πλευρά για αλλαγή, η ίδια για τέλος. Παύση για ρέψιμο, ή πήγαινε πίσω την ώρα αν ξεκίνησες αργά.</span></p>
+    </article>
+    <article class="card">
+      <div class="ico teal"><svg viewBox="0 0 24 24"><rect x="6" y="2.5" width="12" height="19" rx="3"/><path d="M10 5.5h4M9 15h6"/></svg></div>
+      <h3><span lang="en">On the lock screen</span><span lang="el">Στην οθόνη κλειδώματος</span></h3>
+      <p><span lang="en">The running feed shows on the lock screen and in the Dynamic Island, with Pause, Switch and Stop right there.</span><span lang="el">Το τάισμα φαίνεται στην οθόνη κλειδώματος και στο Dynamic Island, με Παύση, Αλλαγή και Τέλος εκεί μπροστά σου.</span></p>
+    </article>
+    <article class="card">
+      <div class="ico lilac"><svg viewBox="0 0 24 24"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2M9.5 2.5h5"/></svg></div>
+      <h3><span lang="en">Know what's next</span><span lang="el">Ξέρεις τι έρχεται</span></h3>
+      <p><span lang="en">See when the next feed is due, with an optional reminder that can stay quiet at night.</span><span lang="el">Δες πότε έρχεται το επόμενο τάισμα, με υπενθύμιση αν τη θέλεις, που μπορεί να μένει ήσυχη τη νύχτα.</span></p>
+    </article>
+    <article class="card">
+      <div class="ico peach"><svg viewBox="0 0 24 24"><path d="M12 3.5c3 3.6 5.5 6.6 5.5 10a5.5 5.5 0 0 1-11 0c0-3.4 2.5-6.4 5.5-10z"/></svg></div>
+      <h3><span lang="en">Everything in one place</span><span lang="el">Όλα σε ένα σημείο</span></h3>
+      <p><span lang="en">Breastfeeding, bottles, pumping, diapers, notes and growth at each visit. More than one baby is fine.</span><span lang="el">Θηλασμός, μπιμπερό, άντληση, πάνες, σημειώσεις και ανάπτυξη σε κάθε επίσκεψη. Και για περισσότερα από ένα μωρά.</span></p>
+    </article>
+    <article class="card">
+      <div class="ico teal"><svg viewBox="0 0 24 24"><path d="M7 3h7l4 4v14H7zM14 3v4h4M10 12h5M10 16h5"/></svg></div>
+      <h3><span lang="en">Ready for the paediatrician</span><span lang="el">Έτοιμο για τον παιδίατρο</span></h3>
+      <p><span lang="en">A clear PDF report of the last 7 or 14 days, and statistics for the week or the month.</span><span lang="el">Καθαρή αναφορά PDF για τις τελευταίες 7 ή 14 μέρες, και στατιστικά για την εβδομάδα ή τον μήνα.</span></p>
+    </article>
+    <article class="card">
+      <div class="ico lilac"><svg viewBox="0 0 24 24"><rect x="6.5" y="6" width="11" height="12" rx="3"/><path d="M9 6l.7-3h4.6l.7 3M9 18l.7 3h4.6l.7-3"/></svg></div>
+      <h3><span lang="en">On your wrist</span><span lang="el">Στον καρπό σου</span></h3>
+      <p><span lang="en">Start, switch and stop a feed or log a bottle from Apple Watch, even with the iPhone in the other room.</span><span lang="el">Ξεκίνα, άλλαξε και σταμάτα τάισμα ή γράψε μπιμπερό από το Apple Watch, ακόμα κι αν το iPhone είναι σε άλλο δωμάτιο.</span></p>
+    </article>
+  </div>
+</section>
+
+<section id="screens" class="block">
+  <h2><span lang="en">A quick look inside</span><span lang="el">Μια ματιά μέσα</span></h2>
+  <p class="sub"><span lang="en">Light for the day, a warm dark theme for the night.</span><span lang="el">Φωτεινό για τη μέρα, ζεστό σκούρο θέμα για τη νύχτα.</span></p>
+  <div class="gallery" tabindex="0" aria-label="Screenshots">
+    <img lang="en" src="img/en-3-home.webp" alt="Home screen: when the next feed is due" width="600" height="1305" loading="lazy">
+    <img lang="el" src="img/el-3-home.webp" alt="Αρχική οθόνη: πότε έρχεται το επόμενο τάισμα" width="600" height="1305" loading="lazy">
+    <img lang="en" src="img/en-1-feeding.webp" alt="A feed running, in the dark theme" width="600" height="1305" loading="lazy">
+    <img lang="el" src="img/el-1-feeding.webp" alt="Τάισμα σε εξέλιξη, στο σκούρο θέμα" width="600" height="1305" loading="lazy">
+    <img lang="en" src="img/en-4-report.webp" alt="PDF report for the paediatrician" width="600" height="1305" loading="lazy">
+    <img lang="el" src="img/el-4-report.webp" alt="Αναφορά PDF για τον παιδίατρο" width="600" height="1305" loading="lazy">
+    <img lang="en" src="img/en-2-lock.webp" alt="The feed on the lock screen" width="600" height="1305" loading="lazy">
+    <img lang="el" src="img/el-2-lock.webp" alt="Το τάισμα στην οθόνη κλειδώματος" width="600" height="1305" loading="lazy">
+    <img lang="en" src="img/en-5-stats.webp" alt="Weekly statistics" width="600" height="1305" loading="lazy">
+    <img lang="el" src="img/el-5-stats.webp" alt="Στατιστικά εβδομάδας" width="600" height="1305" loading="lazy">
+    <img lang="en" src="img/en-6-welcome.webp" alt="Welcome screen" width="600" height="1305" loading="lazy">
+    <img lang="el" src="img/el-6-welcome.webp" alt="Οθόνη καλωσορίσματος" width="600" height="1305" loading="lazy">
+  </div>
+</section>
+
+<section class="block privacy-band">
+  <div class="privacy-inner">
+    <div class="lock"><svg viewBox="0 0 24 24"><rect x="5" y="10.5" width="14" height="10" rx="2.5"/><path d="M8 10.5V8a4 4 0 0 1 8 0v2.5"/></svg></div>
+    <div>
+      <h2><span lang="en">Your data is yours</span><span lang="el">Τα δεδομένα είναι δικά σου</span></h2>
+      <p><span lang="en">No ads, no account, no analytics. Milkie sends nothing anywhere: everything stays on your iPhone, with automatic backups in the Files app.</span><span lang="el">Χωρίς διαφημίσεις, λογαριασμό ή αναλυτικά στοιχεία. Το Milkie δεν στέλνει τίποτα πουθενά: όλα μένουν στο iPhone σου, με αυτόματα αντίγραφα στα Αρχεία.</span></p>
+      <a class="privacy-link" href="privacy.html"><span lang="en">Read the privacy policy</span><span lang="el">Διάβασε την πολιτική απορρήτου</span> →</a>
+    </div>
+  </div>
+</section>
+
+<section id="support" class="block">
+  <h2><span lang="en">Questions</span><span lang="el">Ερωτήσεις</span></h2>
+  <div class="faq">
+    <details>
+      <summary><span lang="en">Is Milkie free?</span><span lang="el">Είναι δωρεάν;</span></summary>
+      <p><span lang="en">Yes, it's free to download, with no ads and nothing to sign up for.</span><span lang="el">Ναι, κατεβαίνει δωρεάν, χωρίς διαφημίσεις και χωρίς εγγραφή.</span></p>
+    </details>
+    <details>
+      <summary><span lang="en">Which devices does it work on?</span><span lang="el">Σε ποιες συσκευές δουλεύει;</span></summary>
+      <p><span lang="en">iPhone with iOS 18 or later, and Apple Watch with watchOS 11 or later.</span><span lang="el">iPhone με iOS 18 ή νεότερο, και Apple Watch με watchOS 11 ή νεότερο.</span></p>
+    </details>
+    <details>
+      <summary><span lang="en">Which languages?</span><span lang="el">Σε ποιες γλώσσες;</span></summary>
+      <p><span lang="en">English and Greek. You can switch in the app's settings.</span><span lang="el">Αγγλικά και ελληνικά. Αλλάζεις γλώσσα στις ρυθμίσεις της εφαρμογής.</span></p>
+    </details>
+    <details>
+      <summary><span lang="en">Is it medical advice?</span><span lang="el">Δίνει ιατρικές συμβουλές;</span></summary>
+      <p><span lang="en">No. Milkie is a logbook. For questions about your baby's feeding or growth, ask your paediatrician.</span><span lang="el">Όχι. Το Milkie είναι ημερολόγιο. Για ερωτήσεις σχετικά με το τάισμα ή την ανάπτυξη του μωρού σου, ρώτησε τον παιδίατρό σου.</span></p>
+    </details>
+  </div>
+  <div class="contact card">
+    <img src="icon.png" alt="" width="64" height="64">
+    <div>
+      <h3><span lang="en">Something not working?</span><span lang="el">Κάτι δεν δουλεύει;</span></h3>
+      <p><span lang="en">Write to us and we'll get back to you.</span><span lang="el">Γράψε μας και θα σου απαντήσουμε.</span></p>
+    </div>
+    <a class="button" href="mailto:support@getmilkie.com">support@getmilkie.com</a>
+  </div>
+</section>
 </main>
+
+<footer class="foot">
+  <span>© 2026 Milkie</span>
+  <a href="privacy.html"><span lang="en">Privacy</span><span lang="el">Απόρρητο</span></a>
+  <a href="mailto:support@getmilkie.com"><span lang="en">Support</span><span lang="el">Υποστήριξη</span></a>
+</footer>
 </body>
 </html>
