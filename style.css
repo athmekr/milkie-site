@@ -100,6 +100,8 @@ main { max-width: 1120px; margin: 0 auto; padding: 0 16px; }
 .badge-store svg { width: 26px; height: 26px; fill: currentColor; }
 .badge-store span { display: flex; flex-direction: column; }
 .badge-store small { font-size: 11px; font-weight: 500; opacity: .8; }
+.badge-soon { background: transparent; color: var(--text); box-shadow: inset 0 0 0 1.5px var(--line); }
+.badge-soon svg { width: 20px; height: 20px; }
 a.badge-store { text-decoration: none; transition: transform .15s ease, opacity .15s ease; }
 a.badge-store:hover { opacity: .88; }
 a.badge-store:active { transform: scale(.97); }
