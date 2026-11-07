@@ -92,14 +92,17 @@ main { max-width: 1120px; margin: 0 auto; padding: 0 16px; }
 .hero h1 { font-size: clamp(40px, 6vw, 64px); font-weight: 800; letter-spacing: -.02em; }
 .lead { font-size: 19px; color: var(--muted); max-width: 30em; margin: 20px 0 28px; }
 .cta { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 22px; }
-.badge-soon {
+.badge-store {
   display: inline-flex; align-items: center; gap: 10px;
   background: var(--text); color: var(--bg); border-radius: 14px; padding: 9px 18px 9px 14px;
   font: 600 19px/1.1 -apple-system, BlinkMacSystemFont, sans-serif;
 }
-.badge-soon svg { width: 26px; height: 26px; fill: currentColor; }
-.badge-soon span { display: flex; flex-direction: column; }
-.badge-soon small { font-size: 11px; font-weight: 500; opacity: .8; }
+.badge-store svg { width: 26px; height: 26px; fill: currentColor; }
+.badge-store span { display: flex; flex-direction: column; }
+.badge-store small { font-size: 11px; font-weight: 500; opacity: .8; }
+a.badge-store { text-decoration: none; transition: transform .15s ease, opacity .15s ease; }
+a.badge-store:hover { opacity: .88; }
+a.badge-store:active { transform: scale(.97); }
 .link-more { font-weight: 600; text-decoration: none; }
 .pills { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0; margin: 28px 0 0; }
 .pills li { font-size: 14px; color: var(--muted); padding: 6px 12px; border: 1px solid var(--line); border-radius: 999px; background: var(--card); }
